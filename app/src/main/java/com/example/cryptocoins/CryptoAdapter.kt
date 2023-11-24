@@ -9,7 +9,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.cryptocoins.databinding.RvItemBinding
 
 class CryptoAdapter(
-    val context: Context,
     private var data: List<CrptoModel>
 ) : RecyclerView.Adapter<CryptoAdapter.ViewHolder>() {
 
@@ -31,7 +30,7 @@ class CryptoAdapter(
         // ViewHolder implementation
     }
 
-    fun changeData(filterData : ArrayList<CrptoModel>){
+    fun  changeData(filterData : ArrayList<CrptoModel>){
         data = filterData
         notifyDataSetChanged()
     }

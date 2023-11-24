@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
 
         apiData
         data = ArrayList()
-        rvAdapter = CryptoAdapter(this, data)
+        rvAdapter = CryptoAdapter(data)
         binding.rv.layoutManager = LinearLayoutManager(this)
         binding.rv.adapter = rvAdapter
 

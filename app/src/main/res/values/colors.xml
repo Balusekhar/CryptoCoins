@@ -3,4 +3,9 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="grey">#3C3939</color>
+
+    <color name="cardBackground">#424242</color> <!-- Dark grey for card background -->
+    <color name="primaryText">#FFFFFF</color> <!-- White for primary text -->
+    <color name="secondaryText">#FFEB3B</color> <!-- Bright yellow for secondary text (e.g., price) -->
+
 </resources>

@@ -7,31 +7,26 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textField"
-        android:background="@color/grey"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:focusedByDefault="false"
-        app:circularflow_radiusInDP="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:textColorHint="@color/white"
-        android:hint="Search">
+        android:hint="Search"
+        app:boxStrokeColor="@color/white"
+        app:hintTextColor="@color/white">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/search"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:shadowRadius="20"
-            style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox.Dense"
             android:textColor="@color/white"
-            android:ems="20"
-            android:id="@+id/search"
-            android:background="@color/grey"
-            />
+            android:inputType="text" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
